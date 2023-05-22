@@ -1,0 +1,30 @@
+{
+  "server": {
+    "type": "tcp",
+    "host": "127.0.0.1",
+    "port": 5020,
+    "timeout": 35,
+    "method": "rtu",
+    "byteOrder": "BIG",
+    "devices": [
+      {
+        "unitId": 1,
+        "deviceName": "MD device1",
+        "attributesPollPeriod": 5000,
+        "timeseriesPollPeriod": 5000,
+        "sendDataOnlyOnChange": false,
+        "attributes": [
+      ],
+      "timeseries": [
+          {
+            "tag": "16uint_read",
+            "type": "16uint",
+            "functionCode": 4,
+            "objectsCount": 2,
+            "address": 1
+          }
+        ]
+      }
+    ]
+  }
+}
